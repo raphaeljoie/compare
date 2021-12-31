@@ -11,6 +11,15 @@ if (compare(1,1)) {
 
 ## Compatibility
 
+### Numbers
+Support edge cases involving `NaN`, `+/-0` and `+/-Infinity` values!
+```js
+compare(-Infinity, -Infinity) // => true
+compare(NaN, NaN) // => true
+compare(-0, -0) // => true
+compare(-0, +0) // => false
+```
+
 ### Objects
 ```js
 compare({a: 1}, {a: 1}) // => true
