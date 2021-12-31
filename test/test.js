@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import compare from '../src/compare.js';
+import { compare } from '../src/main.js';
 
 describe('compare()', () => {
   it('should return true for same integers', () => {
