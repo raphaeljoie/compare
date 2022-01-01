@@ -2,7 +2,7 @@ const toString = Object.prototype.toString;
 
 const isNumber = (x) => toString.call(x) === '[object Number]';
 
-export function compare(x, y) {
+export function ekwal(x, y) {
   // don't return true for +0 and -0 because 1/0 and 1/-0 are not the same!
   if (x === y && x !== 0) return true;
 

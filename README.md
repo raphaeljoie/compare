@@ -1,8 +1,8 @@
 # Compare things
 ```js
-import compare from 'compare';
+import { ekwal } from 'ekwal';
 
-if (compare(1,1)) {
+if (ekwal(1,1)) {
   console.log('1 equals 1');
 }
 // NB: it also works with many other things
@@ -14,14 +14,14 @@ if (compare(1,1)) {
 ### Numbers
 Support edge cases involving `NaN`, `+/-0` and `+/-Infinity` values!
 ```js
-compare(-Infinity, -Infinity) // => true
-compare(NaN, NaN) // => true
-compare(-0, -0) // => true
-compare(-0, +0) // => false
+ekwal(-Infinity, -Infinity) // => true
+ekwal(NaN, NaN) // => true
+ekwal(-0, -0) // => true
+ekwal(-0, +0) // => false
 ```
 
 ### Objects
 ```js
-compare({a: 1}, {a: 1}) // => true
-compare({a: 1}, {a: 2}) // => false
+ekwal({a: 1}, {a: 1}) // => true
+ekwal({a: 1}, {a: 2}) // => false
 ```

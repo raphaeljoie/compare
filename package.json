@@ -4,6 +4,11 @@
   "description": "Compare things",
   "main": "dist/bundles/bundle.umd.js",
   "module": "dist/bundles/bundle.esm.js",
+  "type": "module",
+  "exports": {
+    "import": "./dist/bundles/bundle.esm.js",
+    "require": "./dist/bundles/bundle.umd.js"
+  },
   "scripts": {
     "test": "mocha",
     "build": "npm-run-all build:*",
