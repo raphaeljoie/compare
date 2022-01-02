@@ -21,13 +21,24 @@ export default  {
         {
             file: 'dist/bundles/bundle.umd.js',
             format: 'umd',
-            name: 'compare',
+            name: 'ekwal',
             sourcemap: true
         },
         {
             file: 'dist/bundles/bundle.umd.min.js',
             format: 'umd',
-            name: 'compare',
+            name: 'ekwal',
+            plugins: [terser()],
+            sourcemap: true
+        },
+        {
+            file: 'dist/bundles/bundle.common.js',
+            format: 'cjs',
+            sourcemap: true
+        },
+        {
+            file: 'dist/bundles/bundle.common.min.js',
+            format: 'cjs',
             plugins: [terser()],
             sourcemap: true
         }

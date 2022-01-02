@@ -1,4 +1,7 @@
 # Compare things
+```shell
+npm install ekwal
+```
 ```js
 import { ekwal } from 'ekwal';
 
